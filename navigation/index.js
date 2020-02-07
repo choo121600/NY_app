@@ -2,13 +2,17 @@ import { createAppContainer } from "react-navigation";
 import { createMaterialBottomTabNavigator } from "react-navigation-material-bottom-tabs";
 
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
+
+import HomeScreen from "../screens/HomeScreen";
+import CalendarScreen from "../screens/CalendarScreen";
+import ProfileScreen from "../screens/ProfileScreen";
 
 class Calendar extends Component {
   render() {
     return (
-      <View>
-        <Text> Calendar </Text>
+      <View style={styles.container}>
+        <CalendarScreen />
       </View>
     );
   }
@@ -17,8 +21,8 @@ class Calendar extends Component {
 class Home extends Component {
   render() {
     return (
-      <View>
-        <Text> Home </Text>
+      <View style={styles.container}>
+        <HomeScreen />
       </View>
     );
   }
@@ -27,12 +31,19 @@ class Home extends Component {
 class Profile extends Component {
   render() {
     return (
-      <View>
-        <Text> Profile </Text>
+      <View style={styles.container}>
+        <ProfileScreen />
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#92B6D5"
+  }
+});
 
 import Icon from "react-native-vector-icons/Ionicons";
 
@@ -46,7 +57,7 @@ const TabNavigator = createMaterialBottomTabNavigator(
             <Icon
               style={[{ color: tintColor }]}
               size={25}
-              name={"ios-images"}
+              name={"ios-calendar"}
             />
           </View>
         ),

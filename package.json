@@ -9,6 +9,14 @@
   },
   "dependencies": {
     "expo": "~36.0.0",
+    "expo-ads-admob": "^8.0.0",
+    "expo-ads-facebook": "^8.0.0",
+    "expo-asset": "^8.0.0",
+    "expo-av": "^8.0.0",
+    "expo-file-system": "^8.0.0",
+    "expo-font": "^8.0.0",
+    "expo-permissions": "^8.0.0",
+    "prop-types": "^15.7.2",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
@@ -18,7 +26,8 @@
     "react-native-vector-icons": "^6.6.0",
     "react-native-web": "~0.11.7",
     "react-navigation": "^4.1.0",
-    "react-navigation-material-bottom-tabs": "^2.1.5"
+    "react-navigation-material-bottom-tabs": "^2.1.5",
+    "uuid": "^3.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
